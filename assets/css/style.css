@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(104, 221, 119);
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #537983;
+}
+ 
+
+form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.imgAlimento {
+    height: 200px;
+    width: 250px;
+    margin-left: 30px;
+    border: 3px solid black;
+}
+
+.textImages { 
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.caixa {
+    width: 940px;
+    margin: auto;
+}
+
+/* 
+
+config para mobile:
+
+*/
+
+
+@media screen and(max-width:480px) {
+    .caixa
+    .header
+}
