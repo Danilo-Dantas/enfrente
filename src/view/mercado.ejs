@@ -5,60 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
+
     <title>Projeto Enfrente</title>
 </head>
 
 <body>
-    <div class="container-flex">
-        <div class="row">
-            <header>
-                <p class="text-center" style="color: white; font-size: 35px; padding-top: 25px;">PROJETO ENFRENTE - ARRECADAÇÃO DE ALIMENTOS</p>
-            </header>
+    <header>
+        <h2><a href="/" class="link-home">PROJETO ENFRENTE - ARRECADAÇÃO DE ALIMENTOS</a></h2>
+    </header>
 
-        </div>
-    </div>    
-
-    <div class="container-flex">
-        <div class="row">
+    <main>
+        <section>
             <div>
-            </br>
-                <p class="textoMercado" style="color: white; font-size: 25px;">Escolha abaixo o mercado aonde você está atuando e em seguida clique em
+                <p class="texto-mercado">Escolha abaixo o mercado onde você está
+                    atuando e em seguida clique em
                     "Próximo" para prosseguir.</p>
             </div>
-            <div class="input-group mb-3">
+        </section>
 
-                <form method="post" action="/doacao">
+        <form class="escolha-mercado" method="post" action="/doacao">
 
-                    <select class="custom-select" id="inputGroupSelect01" style="height: 55px;">
+            <select class="campo-escolha" id="inputGroupSelect01">
 
-                        <option selected> Escolha seu Mercado de Atuação </option>
-                        <% for(i in Mercados){%>
-                        <option value="<%=Mercados[i].COD_MERCADO%>"> <%=Mercados[i].NOME_MERCADO%> </option>
-                        <%}%>
+                <option selected> Escolha seu Mercado de Atuação </option>
+                <% for(i in Mercados){%>
+                    <option value="<%=Mercados[i].COD_MERCADO%>">
+                        <%=Mercados[i].NOME_MERCADO%>
+                    </option>
+                    <%}%>
 
-                </select>
+            </select>
 
-                <button type="submit" id="enviaMercado" class="btn btn-primary" style="margin-top: 15px;">Próximo</button>
+            <button type="submit" id="enviaMercado" class="btn-escolha">Próximo</button>
 
-            </form>
+        </form>
+    </main>
 
-            </div>
+    <footer class="footer-home">
+        <p>&copy; Copyright - Dev Team GuDaGa 2021</p>
+    </footer>
 
-       
-
-        </div> 
-    </div>
 </body>
+
 </html>

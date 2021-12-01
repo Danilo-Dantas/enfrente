@@ -5,40 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
+
     <title>Projeto Enfrente</title>
 </head>
 
 <body>
-    <div class="container-flex">
-        <div class="row">
-            <header>
-                <p class="text-center" style="color: white; font-size: 35px; padding-top: 25px;">PROJETO ENFRENTE - ARRECADAÇÃO DE ALIMENTOS</p>
-            </header>
+    <header>
+        <h2><a href="/" class="link-home">PROJETO ENFRENTE - ARRECADAÇÃO DE ALIMENTOS</a></h2>
+    </header>
+
+    <main class="box-doacoes">
+        <div class="box-images">
+            <ul>
+                <li>
+                    <img src="img/achocolatado_200g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Achocolatado 200g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/achocolatado_400g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Achocolatado 400g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/açucar_1kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Açucar 1kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/arroz_1kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Arroz 1kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/arroz_2kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Arroz 2kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/arroz_5kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Arroz 5kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/cafe_250g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Cafe 250g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/cafe_500g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Cafe 500g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/farinha_trigo_1kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Farinha de trigo 1kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/feijao_1kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Feijao 1kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/flocao_500g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Flocao 500g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/leite_1kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Leite 1L</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/leite_em_po_200g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Leite em pó 200g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/leite_em_po_400g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Leite em pó 400g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/macarrao_500g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Macarrão 500g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/molho_tomate_340g.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Molho de tomate 340g</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/oleo_900ml.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Óleo 900ml</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/sal_1kg.jpg" class="img-thumbnail img-alimento">
+                    <div class="info-item">
+                        <label for="item">
+                            <p>Sal 1kg</p>
+                        </label>
+                        <input class="dados-compra" id="item" type="number" min="0" max="50" value="0">
+                    </div>
+                </li>
+
+
+            </ul>
         </div>
-    </div>
-    <div class="caixa">
-    <div class="container">
-        <div class="row">
-                <div class="images" style="display: flex; align-items: center; margin-top: 25px;">
-                    <input type="number" style="width: 65px;" min="0" max="50" value="0">
-                    <img src="imgs/achocolatado_200g.jpg" class="img-thumbnail imgAlimento">
-                    <p class="textImages">Achocolatado 200 gramas</p>
-                </div>
-           </div>
-        </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright - Dev Team GuDaGa 2021 </p>
+    </footer>
+
 </body>
 
 </html>
